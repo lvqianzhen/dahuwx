@@ -1,0 +1,28 @@
+<image mode='widthFix' class='bg1' src='../images/bg2.png'></image>
+
+<view class='section-guize'>
+    <view class='text' catchtap='linkGuize'>查看《活动规则》</view>
+</view>
+
+<view class='section-zhuanshangjin'>
+    <text class='btn' catchtap='showModal'>邀请好友赚取赏金</text>
+</view>
+
+ <view class='section-myprofit'>
+    <image class='btn' mode='widthFix' src='../images/btn2.png' catchtap='linkProfit' alt='查看我的收益'></image>
+</view> 
+
+<view class='modal' hidden='{{isshow}}'>
+    <text class='mask'></text>
+    <view class='cont'>
+        <image class='close' mode='widthFix' src='../images/icon-close.png' catchtap='closeModal'></image>
+        <!-- <view class='h1'>分享并邀请用户使用微信扫码并购买即可赚得赏金，赏金上不封顶。</view> -->
+        <view class='bg'><image mode='widthFix' src='../images/bg4.png'></image></view>
+        <view class='codeimg'><image mode='widthFix' src='{{codeurl}}'></image></view>
+        <!-- <view class='codeimg'><image mode='widthFix' src='../images/qrcode.png'></image></view> -->
+        <view class='btns'>
+            <button class='btn' catchtap='saveImg'>保存到相册</button> 
+            <button class='btn' open-type="share">推荐给朋友</button>
+        </view>
+    </view>
+</view>

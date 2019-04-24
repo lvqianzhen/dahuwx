@@ -1,0 +1,26 @@
+<view class='section-bg1'>
+    <image class='bg' mode='widthFix' src='../images/bg5.png'></image>
+    <view class='carbox'>
+        <image class='bg1' mode='widthFix' src='../images/bg7.png'></image>
+        <text class='text'>{{licenseplate}}</text>
+    </view>
+</view>
+<view class='section-bg2'>
+    <image class='bg' mode='widthFix' src='../images/bg6.png'></image>
+</view>
+
+<view class='section-btns' wx:if='{{!hasjihuo}}'>
+    <view class='btn {{btnDisabled?"disabled":""}}' catchtap="nimingPhoneCall">匿名电话通知</view>
+    <!-- <view class='btn disabled' catchtap='noPass' wx:if='{{btnDisabled}}'>匿名电话通知</view> -->
+</view> 
+
+<!-- <view class='section-btns section-jihuo' wx:if='{{hasjihuo}}'> -->
+<view class='section-btns' wx:if='{{hasjihuo}}'>
+    <view class='section-tips'>您的挪车码还未激活</view>
+    <!-- <button class='btn' open-type="getPhoneNumber" bindgetphonenumber="jihuoCode">现在去激活吧</button> -->
+    <button class='btn'  catchtap="jihuoCode">现在去激活吧</button>
+</view>
+
+<view class='section-telephone'>
+    客服电话：<text class='text' catchtap='makeKefuCall' data-phonenumber='(400) 700 3696'>‭(400) 700 3696</text>
+</view>

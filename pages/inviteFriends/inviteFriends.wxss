@@ -1,0 +1,26 @@
+page{ padding: 0 0 40rpx; background-color: #feefd2; }
+
+.bg1{ width: 100%; }
+
+.section-guize{ text-align: center; margin-top: -50rpx; }
+.section-guize .text{ color: #ff5733; font-size: 28rpx; }
+
+.section-zhuanshangjin{ margin-top: 45rpx; text-align: center; }
+.section-zhuanshangjin .btn{ display: inline-block; width: 65%; height: 92rpx; line-height: 90rpx; background-color: #ff5733; color: #fff; font-size: 40rpx; border-radius: 200rpx; box-shadow:0 4px 0 0 #cb0000; }
+
+.section-myprofit{ margin-top: 45rpx; text-align: center; }
+.section-myprofit .btn{ display: inline-block; width: 42%; }
+
+.modal{ position: fixed; top: 0; z-index: 9; width: 100%; height: 100%; }
+.modal .mask{ position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); }
+.modal .cont{ position: absolute; top: 70rpx; left: 55rpx; right: 55rpx; z-index: 9; color: #fff; }
+.modal .close{ position: absolute; top: -35rpx; right: 25rpx; width: 70rpx; z-index: 9; }
+.modal .cont .h1{ font-size: 24rpx; padding: 20rpx; }
+.modal .cont .bg image{ display: block; width: 100%; }
+.modal .cont .codeimg{ position: absolute; top: 165rpx; left: 125rpx; right: 125rpx; background-color: #fff; }
+.modal .cont .codeimg image{ width: 100%; }
+.modal .btns{ padding: 40rpx 70rpx 30rpx; background-color: #ff5242; border-radius: 0 0 20rpx 30rpx; }
+.modal .btns .btn{ width: 100%; height: 92rpx; line-height: 92rpx; border-radius: 200rpx; background-color: #fff; color: #ff5733; font-size: 36rpx; box-shadow:0 4px 0 0 #cb0000; margin-bottom: 26rpx; }
+.modal .btns .btn:nth-child(2){ background-color: #ffd700; color: #3f270b; }
+
+

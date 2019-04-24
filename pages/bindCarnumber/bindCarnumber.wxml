@@ -1,0 +1,31 @@
+<view class='section-cont1'>
+    <view class='header'>车辆信息</view>
+    <view class='bodyer'>
+        <view class='row1'>
+            <view class='province' catchtap='showProvince'>{{province}}</view>
+            <input placeholder="请输入车牌号" placeholder-class="placeholder" focus bindinput='setCarNumber' value='{{carNumber}}'/>
+        </view>
+        <view class='row2'>手机号</view>
+        <view class='row4'>
+            <input class='input' placeholder="请输入正确手机号码" bindinput='setPhoneNumber' value='{{phoneNumber}}' type='number' focus='{{isChangePhone?true:false}}'/>
+            <!-- <text class='btn' catchtap='changePhone'>更改手机号</text> -->
+        </view>
+        <view class='row3'>挪车将通知您在此处绑定的手机号</view>
+    </view>
+</view>
+
+<view class='btns'>
+    <view class='btn' catchtap='save' wx:if='{{!isjihuo}}'>确认生成</view>
+    <view class='btn' catchtap='saveJihuo' wx:if='{{isjihuo}}'>激活挪车码</view>
+</view>
+
+<view class='cont-customer-telephone'>
+    客服电话：<text class='text' catchtap='makePhoneCall' data-phonenumber='‭(400) 700 3696'>‭(400) 700 3696</text>
+</view>
+
+<view class='province-action' wx:if='{{show}}'>
+    <view class='bodyer'>
+        <view class='list' hover-class="hover-bgcolor" wx:for='{{provincename}}' wx:key='' data-province='{{item}}' catchtap='selectProvince'>{{item}}</view>
+        <text class='list list-hide' catchtap='hideProvince'>隐藏</text>
+    </view>
+</view>
